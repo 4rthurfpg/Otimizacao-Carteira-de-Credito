@@ -1,47 +1,39 @@
 # Otimização de Carteira de Crédito Corporativo via Programação Linear
 
-Repositório dedicado à implementação computacional, bases de dados e experimentos do projeto **Otimização da Alocação de Capital em Carteira de Crédito Corporativo via Programação Linear**.
+Implementação em Python do modelo de Programação Linear (PL) para alocação ótima de capital em uma carteira de 20 operações corporativas brasileiras, utilizando o solver **HiGHS** (`scipy.optimize.linprog`).
 
-## Estrutura do Projeto
+## Estrutura do Repositório
 
 ```text
-.
-├── data/
-│   ├── raw/            # Bases originais coletadas (imutáveis)
-│   ├── processed/      # Bases tratadas e parametrizadas para o modelo LP
-│   └── outputs/        # Resultados exportados (alocações, folgas, preços-sombra, sensibilidade)
-├── notebooks/          # Notebooks exploratórios e análises interativas
-├── reports/
-│   └── figures/        # Gráficos gerados para o relatório e apresentação
-├── scripts/            # Scripts executáveis para rodar cenários e gerar saídas
-├── src/
-│   ├── data/           # Leitura, validação e pré-processamento das bases
-│   ├── model/          # Formulação LP, cenários (irrestrito/diversificado), dualidade e sensibilidade
-│   └── visualization/  # Geração de tabelas e gráficos analíticos
-├── tests/              # Testes unitários e validação matemática do modelo
-├── pyproject.toml      # Metadados e dependências do projeto
-└── requirements.txt    # Dependências principais para instalação via pip
+modelagem/
+├── dados/
+│   ├── operacoes.csv        # 20 operações corporativas calibradas (spread, PD, LGD, setor, rating)
+│   └── parametros.yaml      # Parâmetros da política de crédito (B, L_c, tetos setoriais, cotas, rating, EL_max)
+├── resultados/              # Tabelas (.csv) e gráficos (.png, 300 dpi) gerados automaticamente
+├── modelo.py                # Leitura, validação, montagem explícita de A_ub/b_ub e resolução (HiGHS)
+├── experimentos.py          # Execução dos cenários, pós-otimalidade, sensibilidade, inviabilidade e gráficos
+├── requirements.txt         # Dependências Python (pandas, numpy, scipy, matplotlib, pyyaml)
+├── .gitignore
+└── README.md
 ```
 
-## Configuração do Ambiente Python
+## Execução
 
-Recomendado utilizar ambiente virtual isolado (`.venv`):
+Com o ambiente virtual ativo (ou apontando diretamente para `.venv`):
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+python experimentos.py
 ```
 
-Para incluir ferramentas de desenvolvimento e notebooks (`pytest`, `ruff`, `jupyter`):
+O comando `python experimentos.py` executa todas as análises e grava automaticamente os arquivos `.csv` e `.png` em `resultados/`.
 
-```bash
-pip install -e ".[dev]"
-```
+## Visão Geral do Modelo
 
-## Convenções de Organização
-
-- **Bases brutas (`data/raw/`):** armazenar arquivos originais de referência (taxas, spreads, PDs, LGDs, limites setoriais) sem edição manual direta.
-- **Bases processadas (`data/processed/`):** armazenar datasets estruturados com os parâmetros canônicos do modelo ($j_i$, $\text{PD}_i$, $\text{LGD}_i$, $\text{EL}_i$, $U_i$, $L_i$, setor e *rating*).
-- **Resultados (`data/outputs/`):** armazenar CSVs/JSONs gerados pelos scripts de execução (cenário irrestrito vs. diversificado, folgas, preços-sombra e curva de sensibilidade).
-- **Código-fonte (`src/`):** manter a lógica de dados, modelagem LP e visualização separada em módulos reutilizáveis e testáveis.
+- **Decisão:** $x_i \ge 0$ (capital em R\$ milhões alocado à operação $i$).
+- **Objetivo:** maximizar $\sum_i \pi_i x_i$, onde $\pi_i = \text{spread}_i - \text{PD}_i \cdot \text{LGD}_i$ (implementado como $\min \sum_i (-\pi_i) x_i$).
+- **Cenários comparados:**
+  - **Irrestrito:** orçamento ($B = \text{R\$ } 500\text{ Mi}$) e teto por cliente ($L_c = \text{R\$ } 75\text{ Mi}$).
+  - **Diversificado:** adiciona tetos setoriais ($\alpha_s = 30\%$), teto agregado para `AA(bra)` e inferiores ($\le 20\%$ de $B$), cotas mínimas estratégicas (`Energia Elétrica >= 15%`, `Agronegócio e Alimentos >= 12%`) e teto de perda esperada agregada ($EL_{\max} = \text{R\$ } 1{,}75\text{ Mi}$).

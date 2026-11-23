@@ -1,0 +1,108 @@
+# Parâmetros de Política de Crédito e Concentração da Carteira
+# Projeto: Otimização da Alocação de Capital em Carteira de Crédito Corporativo via PL (UFMG)
+# Data de referência da calibração: 2026-11-23
+
+unidade_monetaria: "BRL_milhoes"
+
+# Orçamento total disponível para alocação (R$ milhões)
+B: 500.0
+
+# Limite máximo de Perda Esperada (EL) agregada da carteira
+el_max_frac: 0.0035        # 0,35% a.a. sobre o orçamento total B
+el_max_brl_milhoes: 1.75   # 0.0035 * 500.0 = R$ 1,75 milhão
+
+# Limites de exposição por cliente / contraparte (alinhado à Res. CMN nº 4.677/2018)
+limites_cliente:
+  frac: 0.15               # Máximo de 15,0% de B por emissor (abaixo do teto legal de 25% do PR)
+  brl_milhoes: 75.0        # 0.15 * 500.0 = R$ 75,00 milhões
+  cota_min_frac: 0.0
+  cota_min_brl_milhoes: 0.0
+
+# Tetos máximos de concentração por setor econômico (alpha_s; Res. CMN nº 4.557/2017)
+tetos_setor:
+  "Energia Elétrica":
+    frac: 0.30
+    brl_milhoes: 150.0
+  "Saneamento e Logística":
+    frac: 0.30
+    brl_milhoes: 150.0
+  "Agronegócio e Alimentos":
+    frac: 0.30
+    brl_milhoes: 150.0
+  "Varejo e Saúde":
+    frac: 0.30
+    brl_milhoes: 150.0
+  "Indústria de Base e Mineração":
+    frac: 0.30
+    brl_milhoes: 150.0
+
+# Cotas mínimas estratégicas por setor econômico (gamma_s)
+cotas_min_setor:
+  "Energia Elétrica":
+    frac: 0.15
+    brl_milhoes: 75.0
+  "Saneamento e Logística":
+    frac: 0.00
+    brl_milhoes: 0.0
+  "Agronegócio e Alimentos":
+    frac: 0.12
+    brl_milhoes: 60.0
+  "Varejo e Saúde":
+    frac: 0.00
+    brl_milhoes: 0.0
+  "Indústria de Base e Mineração":
+    frac: 0.00
+    brl_milhoes: 0.0
+
+# Limite de exposição por faixa de rating (beta_r)
+# Faixa de risco especulativo / sub-grau de risco elevado na escala global (AA(bra) e inferiores ~ BB- e inferiores)
+tetos_rating:
+  grupo_maior_risco:
+    descricao: "Operações com rating nacional AA(bra) e inferiores (equivalente global BB- e inferiores)"
+    ratings_incluidos:
+      - "AA(bra)"
+      - "AA-(bra)"
+      - "A+(bra)"
+      - "A(bra)"
+      - "A-(bra)"
+      - "BBB(bra)"
+    frac: 0.20
+    brl_milhoes: 100.0
+  por_rating_individual:
+    "AAA(bra)":
+      frac: 1.00
+      brl_milhoes: 500.0
+    "AA+(bra)":
+      frac: 1.00
+      brl_milhoes: 500.0
+    "AA(bra)":
+      frac: 0.20
+      brl_milhoes: 100.0
+    "AA-(bra)":
+      frac: 0.20
+      brl_milhoes: 100.0
+    "A+(bra)":
+      frac: 0.20
+      brl_milhoes: 100.0
+    "A(bra)":
+      frac: 0.20
+      brl_milhoes: 100.0
+    "A-(bra)":
+      frac: 0.20
+      brl_milhoes: 100.0
+    "BBB(bra)":
+      frac: 0.20
+      brl_milhoes: 100.0
+
+# Metadados de calibração de PD e LGD (referência metodológica)
+calibracao_risco:
+  lgd_regras:
+    quirografaria: 0.45    # Basileia IRB-Foundation / Circular BCB 3.648/2013 (sênior sem garantia real)
+    garantia_real: 0.30    # Mitigação por alienação/cessão fiduciária em escritura (faixa 0.25-0.35)
+    subordinada: 0.75      # Referência regulatória (não há operações subordinadas na amostra)
+  pd_fonte: "S&P Global Ratings - 2024 Annual Global Corporate Default And Rating Transition Study (1981-2024) + Fitch Brazil National Scale Correspondence Table (soberano BB)"
+  spread_referencia_bcb:
+    selic_meta_aa: 0.1400            # 14,00% a.a. (Copom ago-set/2026)
+    taxa_media_credito_livre_pj_aa: 0.2440  # 24,4% a.a. (Nota BCB Estatísticas Monetárias e de Crédito, set/2026)
+    inadimplencia_pj_total: 0.0330   # 3,3% (BCB set/2026)
+    inadimplencia_pj_livre: 0.0420   # 4,2% (BCB set/2026)

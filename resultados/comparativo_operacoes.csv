@@ -1,0 +1,21 @@
+id,cliente,setor,rating,garantia,spread,pd,lgd,el,pi,alocacao_irrestrito_brl,alocacao_diversificado_brl,diferenca_brl,custo_reduzido_irrestrito,custo_reduzido_diversificado
+OP01,CPFL Comercialização Brasil S.A.,Energia Elétrica,AAA(bra),quirografaria,0.003,0.0024,0.45,0.00108,0.00192,0.0,0.0,0.0,0.009765000000000001,0.006500000000000001
+OP02,Cemig Geração e Transmissão S.A.,Energia Elétrica,AAA(bra),quirografaria,0.0062,0.0024,0.45,0.00108,0.0051199999999999996,0.0,0.0,0.0,0.006565000000000001,0.003300000000000001
+OP03,Energisa S.A.,Energia Elétrica,AA+(bra),quirografaria,0.0075,0.0068,0.45,0.00306,0.0044399999999999995,0.0,0.0,0.0,0.0072450000000000014,0.004760456273764259
+OP04,Equatorial Pará Distribuidora S.A.,Energia Elétrica,AAA(bra),quirografaria,0.0095,0.0024,0.45,0.00108,0.00842,0.0,75.0,75.0,0.0032650000000000005,0.0
+OP05,Sanepar (Cia. de Saneamento do PR),Saneamento e Logística,AAA(bra),quirografaria,0.0105,0.0024,0.45,0.00108,0.009420000000000001,0.0,0.0,0.0,0.0022649999999999997,0.0014999999999999996
+OP06,Localiza Fleet S.A.,Saneamento e Logística,AAA(bra),quirografaria,0.012,0.0024,0.45,0.00108,0.010920000000000001,0.0,25.000000000000007,25.000000000000007,0.0007650000000000001,0.0
+OP07,Vamos Locação de Caminhões S.A.,Saneamento e Logística,AA(bra),quirografaria,0.0225,0.0121,0.45,0.005445,0.017055,75.0,53.27418673426276,-21.725813265737237,0.0,0.0
+OP08,Aegea Saneamento e Participações S.A.,Saneamento e Logística,A(bra),quirografaria,0.0275,0.0293,0.45,0.013185,0.014315,75.0,0.0,-75.0,0.0,0.00579087452471483
+OP09,Marfrig Global Foods S.A.,Agronegócio e Alimentos,AAA(bra),quirografaria,0.008,0.0024,0.45,0.00108,0.00692,0.0,0.0,0.0,0.004765000000000001,0.004000000000000001
+OP10,Camil Alimentos S.A.,Agronegócio e Alimentos,AA+(bra),quirografaria,0.0155,0.0068,0.45,0.00306,0.01244,75.0,75.0,0.0,0.0,0.0
+OP11,Minerva S.A.,Agronegócio e Alimentos,AAA(bra),quirografaria,0.017,0.0024,0.45,0.00108,0.01592,75.0,75.0,0.0,0.0,0.0
+OP12,Três Tentos Agroindustrial S.A.,Agronegócio e Alimentos,A+(bra),quirografaria,0.021,0.0207,0.45,0.009315,0.011685000000000001,50.0,0.0,-50.0,0.0,0.006895437262357414
+OP13,Smart Fit Escola de Ginástica S.A.,Varejo e Saúde,AA+(bra),quirografaria,0.0065,0.0068,0.45,0.00306,0.00344,0.0,0.0,0.0,0.008245,0.008260456273764259
+OP14,Assaí (Sendas Distribuidora S.A.),Varejo e Saúde,AAA(bra),quirografaria,0.0125,0.0024,0.45,0.00108,0.011420000000000001,0.0,75.0,75.0,0.0002649999999999996,0.0
+OP15,Pague Menos (Empreendimentos S.A.),Varejo e Saúde,AA-(bra),quirografaria,0.016,0.0164,0.45,0.007380000000000001,0.00862,0.0,0.0,0.0,0.0030650000000000018,0.009197718631178707
+OP16,CVC Brasil Operadora S.A.,Varejo e Saúde,BBB(bra),garantia_real,0.039,0.0576,0.3,0.01728,0.02172,75.0,46.72581326573723,-28.27418673426277,0.0,0.0
+OP17,Gerdau S.A.,Indústria de Base e Mineração,AAA(bra),quirografaria,0.005,0.0024,0.45,0.00108,0.00392,0.0,0.0,0.0,0.007765000000000001,0.007000000000000001
+OP18,Suzano S.A.,Indústria de Base e Mineração,AAA(bra),quirografaria,0.01,0.0024,0.45,0.00108,0.00892,0.0,0.0,0.0,0.002765,0.002
+OP19,Aura Almas Mineração S.A.,Indústria de Base e Mineração,AA+(bra),garantia_real,0.016,0.0068,0.3,0.0020399999999999997,0.01396,75.0,75.0,0.0,0.0,0.0
+OP20,CSN Cimentos Brasil S.A.,Indústria de Base e Mineração,A-(bra),quirografaria,0.03,0.0435,0.45,0.019575,0.010425,0.0,0.0,0.0,0.0012600000000000007,0.012199619771863117

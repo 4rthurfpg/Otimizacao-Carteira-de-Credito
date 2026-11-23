@@ -1,0 +1,31 @@
+restricao,familia,sinal,limite_brl,realizado_brl,folga_brl,ativa,dual_scipy_raw,preco_sombra_canonico,impacto_z_por_1mi,descricao
+orcamento_total,Orcamento,<=,500.0,500.0,0.0,True,-0.010494296577946769,0.010494296577946769,0.010494296577946769,Orcamento total da carteira <= R$ 500.00 Mi
+teto_cliente[OP01],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente CPFL Comercialização Brasil S.A. <= R$ 75.00 Mi
+teto_cliente[OP02],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Cemig Geração e Transmissão S.A. <= R$ 75.00 Mi
+teto_cliente[OP03],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Energisa S.A. <= R$ 75.00 Mi
+teto_cliente[OP04],Teto Cliente,<=,75.0,75.0,0.0,True,0.0,0.0,0.0,Exposicao maxima ao cliente Equatorial Pará Distribuidora S.A. <= R$ 75.00 Mi
+teto_cliente[OP05],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Sanepar (Cia. de Saneamento do PR) <= R$ 75.00 Mi
+teto_cliente[OP06],Teto Cliente,<=,75.0,25.000000000000007,49.99999999999999,False,0.0,0.0,0.0,Exposicao maxima ao cliente Localiza Fleet S.A. <= R$ 75.00 Mi
+teto_cliente[OP07],Teto Cliente,<=,75.0,53.27418673426276,21.725813265737237,False,0.0,0.0,0.0,Exposicao maxima ao cliente Vamos Locação de Caminhões S.A. <= R$ 75.00 Mi
+teto_cliente[OP08],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Aegea Saneamento e Participações S.A. <= R$ 75.00 Mi
+teto_cliente[OP09],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Marfrig Global Foods S.A. <= R$ 75.00 Mi
+teto_cliente[OP10],Teto Cliente,<=,75.0,75.0,0.0,True,-0.0007395437262357404,0.0007395437262357404,0.0007395437262357404,Exposicao maxima ao cliente Camil Alimentos S.A. <= R$ 75.00 Mi
+teto_cliente[OP11],Teto Cliente,<=,75.0,75.0,0.0,True,-0.004999999999999999,0.004999999999999999,0.004999999999999999,Exposicao maxima ao cliente Minerva S.A. <= R$ 75.00 Mi
+teto_cliente[OP12],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Três Tentos Agroindustrial S.A. <= R$ 75.00 Mi
+teto_cliente[OP13],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Smart Fit Escola de Ginástica S.A. <= R$ 75.00 Mi
+teto_cliente[OP14],Teto Cliente,<=,75.0,75.0,0.0,True,-0.0005000000000000004,0.0005000000000000004,0.0005000000000000004,Exposicao maxima ao cliente Assaí (Sendas Distribuidora S.A.) <= R$ 75.00 Mi
+teto_cliente[OP15],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Pague Menos (Empreendimentos S.A.) <= R$ 75.00 Mi
+teto_cliente[OP16],Teto Cliente,<=,75.0,46.72581326573723,28.27418673426277,False,0.0,0.0,0.0,Exposicao maxima ao cliente CVC Brasil Operadora S.A. <= R$ 75.00 Mi
+teto_cliente[OP17],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Gerdau S.A. <= R$ 75.00 Mi
+teto_cliente[OP18],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente Suzano S.A. <= R$ 75.00 Mi
+teto_cliente[OP19],Teto Cliente,<=,75.0,75.0,0.0,True,-0.0026615969581749045,0.0026615969581749045,0.0026615969581749045,Exposicao maxima ao cliente Aura Almas Mineração S.A. <= R$ 75.00 Mi
+teto_cliente[OP20],Teto Cliente,<=,75.0,0.0,75.0,False,0.0,0.0,0.0,Exposicao maxima ao cliente CSN Cimentos Brasil S.A. <= R$ 75.00 Mi
+teto_setor[Energia Elétrica],Teto Setorial,<=,150.0,75.0,75.0,False,0.0,0.0,0.0,Teto setorial Energia Elétrica <= R$ 150.00 Mi
+teto_setor[Saneamento e Logística],Teto Setorial,<=,150.0,78.27418673426277,71.72581326573723,False,0.0,0.0,0.0,Teto setorial Saneamento e Logística <= R$ 150.00 Mi
+teto_setor[Agronegócio e Alimentos],Teto Setorial,<=,150.0,150.0,0.0,True,0.0,0.0,0.0,Teto setorial Agronegócio e Alimentos <= R$ 150.00 Mi
+teto_setor[Varejo e Saúde],Teto Setorial,<=,150.0,121.72581326573723,28.27418673426277,False,0.0,0.0,0.0,Teto setorial Varejo e Saúde <= R$ 150.00 Mi
+teto_setor[Indústria de Base e Mineração],Teto Setorial,<=,150.0,75.0,75.0,False,0.0,0.0,0.0,Teto setorial Indústria de Base e Mineração <= R$ 150.00 Mi
+teto_rating[AA(bra)_e_inferiores],Teto Rating,<=,100.0,100.0,0.0,True,-0.00441444866920152,0.00441444866920152,0.00441444866920152,Exposicao em AA(bra) e inferiores <= R$ 100.00 Mi
+cota_min_setor[Energia Elétrica],Cota Minima,>=,75.0,75.0,0.0,True,-0.0025000000000000005,0.0025000000000000005,-0.0025000000000000005,Cota minima estrategica Energia Elétrica >= R$ 75.00 Mi
+cota_min_setor[Agronegócio e Alimentos],Cota Minima,>=,60.0,150.0,90.0,False,0.0,0.0,-0.0,Cota minima estrategica Agronegócio e Alimentos >= R$ 60.00 Mi
+teto_el_agregada,Perda Esperada,<=,1.75,1.7500000000000002,0.0,True,-0.394169835234474,0.394169835234474,0.394169835234474,Perda esperada total da carteira <= R$ 1.7500 Mi

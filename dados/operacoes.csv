@@ -1,0 +1,21 @@
+id,cliente,setor,rating,spread,pd,lgd,garantia,fonte
+OP01,CPFL Comercialização Brasil S.A.,Energia Elétrica,AAA(bra),0.0030,0.0024,0.45,quirografaria,CPFC16 (6a Em.; em. 02/12/2025) - ANBIMA/Fitch
+OP02,Cemig Geração e Transmissão S.A.,Energia Elétrica,AAA(bra),0.0062,0.0024,0.45,quirografaria,CMGTC3 (13a Em.; em. 15/08/2026; venc. 15/08/2033) - ANBIMA/Fitch
+OP03,Energisa S.A.,Energia Elétrica,AA+(bra),0.0075,0.0068,0.45,quirografaria,ENGIC4 (24a Em.; em. 15/09/2025) - ANBIMA/Fitch
+OP04,Equatorial Pará Distribuidora S.A.,Energia Elétrica,AAA(bra),0.0095,0.0024,0.45,quirografaria,EQPA17 (7a Em.; em. 05/08/2024; venc. 05/08/2030) - ANBIMA/S&P (brAAA)
+OP05,Sanepar (Cia. de Saneamento do PR),Saneamento e Logística,AAA(bra),0.0105,0.0024,0.45,quirografaria,SAPRB4 (14a Em.; em. 15/01/2024; venc. 15/01/2030) - ANBIMA/Fitch
+OP06,Localiza Fleet S.A.,Saneamento e Logística,AAA(bra),0.0120,0.0024,0.45,quirografaria,TFLEA8 (18a Em.; em. 20/06/2025; venc. 20/06/2030) - ANBIMA/Fitch
+OP07,Vamos Locação de Caminhões S.A.,Saneamento e Logística,AA(bra),0.0225,0.0121,0.45,quirografaria,VAMOA3 (13a Em.; em. 20/09/2025; venc. 20/09/2030) - ANBIMA/Fitch
+OP08,Aegea Saneamento e Participações S.A.,Saneamento e Logística,A(bra),0.0275,0.0293,0.45,quirografaria,AEGPA9 (19a Em.; em. 25/06/2024; venc. 25/06/2029) - ANBIMA/Fitch (jun/2026)
+OP09,Marfrig Global Foods S.A.,Agronegócio e Alimentos,AAA(bra),0.0080,0.0024,0.45,quirografaria,MRFGA7 (17a Em.; em. 20/08/2024; venc. 25/09/2029) - ANBIMA/Fitch
+OP10,Camil Alimentos S.A.,Agronegócio e Alimentos,AA+(bra),0.0155,0.0068,0.45,quirografaria,CAMLB1 (11a Em.; em. 30/10/2021; venc. 30/10/2028) - ANBIMA/S&P (brAA+)
+OP11,Minerva S.A.,Agronegócio e Alimentos,AAA(bra),0.0170,0.0024,0.45,quirografaria,MNRVB2 (21a Em.; em. 15/04/2026; venc. 15/04/2031) - ANBIMA/Fitch
+OP12,Três Tentos Agroindustrial S.A.,Agronegócio e Alimentos,A+(bra),0.0210,0.0207,0.45,quirografaria,TRES11 (1a Em.; em. 05/04/2024; venc. 05/04/2029) - ANBIMA/S&P (brA+ set/2026)
+OP13,Smart Fit Escola de Ginástica S.A.,Varejo e Saúde,AA+(bra),0.0065,0.0068,0.45,quirografaria,SMFTA5 (15a Em.; em. 19/08/2026; venc. 20/08/2031) - ANBIMA/Fitch
+OP14,Assaí (Sendas Distribuidora S.A.),Varejo e Saúde,AAA(bra),0.0125,0.0024,0.45,quirografaria,ASAIA1 (11a Em.; em. 25/09/2024; venc. 09/2029) - ANBIMA/Fitch
+OP15,Pague Menos (Empreendimentos S.A.),Varejo e Saúde,AA-(bra),0.0160,0.0164,0.45,quirografaria,PGMN18 (8a Em.; em. 25/06/2025; venc. 25/06/2029) - ANBIMA/Fitch
+OP16,CVC Brasil Operadora S.A.,Varejo e Saúde,BBB(bra),0.0390,0.0576,0.30,garantia_real,CVCB17 (7a Em.; em. 10/09/2026; venc. 10/09/2029) - ANBIMA/Fitch
+OP17,Gerdau S.A.,Indústria de Base e Mineração,AAA(bra),0.0050,0.0024,0.45,quirografaria,GGBRA8 (18a Em.; em. 10/12/2024) - ANBIMA/Fitch
+OP18,Suzano S.A.,Indústria de Base e Mineração,AAA(bra),0.0100,0.0024,0.45,quirografaria,SUZBB1 (11a Em.; em. 15/05/2024; venc. 15/05/2034) - ANBIMA/Fitch
+OP19,Aura Almas Mineração S.A.,Indústria de Base e Mineração,AA+(bra),0.0160,0.0068,0.30,garantia_real,AALM12 (2a Em.; em. 02/10/2024; venc. 02/10/2030) - ANBIMA/S&P (brAA+)
+OP20,CSN Cimentos Brasil S.A.,Indústria de Base e Mineração,A-(bra),0.0300,0.0435,0.45,quirografaria,HOLC14 (4a Em.; em. 17/06/2025; venc. 17/06/2029) - ANBIMA/S&P (brA- mar/2026)

@@ -1,0 +1,9 @@
+rating,grupo_risco,irrestrito_brl,irrestrito_pct_B,diversificado_brl,diversificado_pct_B,diferenca_brl
+AAA(bra),Baixo risco (AAA/AA+),75.0,15.0,250.0,50.0,175.0
+AA+(bra),Baixo risco (AAA/AA+),150.0,30.0,150.0,30.0,0.0
+AA(bra),AA(bra) e inferiores (teto agregado 20%),75.0,15.0,53.27418673426276,10.654837346852553,-21.725813265737237
+AA-(bra),AA(bra) e inferiores (teto agregado 20%),0.0,0.0,0.0,0.0,0.0
+A+(bra),AA(bra) e inferiores (teto agregado 20%),50.0,10.0,0.0,0.0,-50.0
+A(bra),AA(bra) e inferiores (teto agregado 20%),75.0,15.0,0.0,0.0,-75.0
+A-(bra),AA(bra) e inferiores (teto agregado 20%),0.0,0.0,0.0,0.0,0.0
+BBB(bra),AA(bra) e inferiores (teto agregado 20%),75.0,15.0,46.72581326573723,9.345162653147447,-28.27418673426277

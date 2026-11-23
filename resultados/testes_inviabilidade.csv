@@ -1,0 +1,3 @@
+teste,parametro_alterado,viavel,status_solver,mensagem_solver,explicacao_matematica
+Teste (a) - Conflito Setorial,Teto de Energia Elétrica = 10% (R$ 50 Mi) < Cota mínima 15% (R$ 75 Mi),False,2,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),Viola a condição necessária intra-setorial gamma_s <= alpha_s.
+Teste (b) - Limite Extremo de Risco,"EL_max = R$ 0,05 Mi (0,01% de B) < Mínimo das cotas (R$ 0,1458 Mi)",False,2,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),"Mesmo alocando apenas as cotas mínimas (R$ 135 Mi) nos ativos AAA(bra), EL >= 0,1458 Mi."

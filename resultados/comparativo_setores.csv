@@ -1,0 +1,6 @@
+setor,irrestrito_brl,irrestrito_pct_B,diversificado_brl,diversificado_pct_B,diferenca_brl,cota_min_brl,teto_setor_brl
+Energia Elétrica,0.0,0.0,75.0,15.0,75.0,75.0,150.0
+Saneamento e Logística,150.0,30.0,78.27418673426277,15.654837346852553,-71.72581326573723,0.0,150.0
+Agronegócio e Alimentos,200.0,40.0,150.0,30.0,-50.0,60.0,150.0
+Varejo e Saúde,75.0,15.0,121.72581326573723,24.345162653147447,46.72581326573723,0.0,150.0
+Indústria de Base e Mineração,75.0,15.0,75.0,15.0,0.0,0.0,150.0
